@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZE TIME SQARD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background video styling */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Overlaying content */
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: rgb(18, 5, 66);
+            margin-top: 20%;
+        }
+
+        h1 {
+            font-size: medium;
+        }
+
+        /* Navbar styling */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(16, 41, 46, 0.7);
+            backface-visibility: visible;
+            padding: 1rem;
+            z-index: 2;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: right;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: rgb(246, 244, 248);
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+    .logo{
+    width: 160px;
+    margin-top: 10px;
+    cursor: pointer;
+        }
+        
+.quiz-container {
+  background-color: rgb(81, 14, 238);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(7, 54, 209, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  color: #0b0547;
+}
+
+.question {
+  margin-bottom: 20px;
+  font-size:large;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    margin: 0px 5px;
+    text-align:center;
+    border-radius: 25px;
+    color: rgb(4, 0, 255);
+    border: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+button:hover{
+    background-color: #01c0fa;
+    transition: 0.5s;
+
+}
+button:hover
+{
+    color:aqua;
+}
+#result {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Video background -->
+    <video autoplay muted loop class="video-background">
+        <source src="backgro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Navbar -->
+    <nav>
+        <img src="logogo.png" class="logo" height="50px" weight="50px"></a>
+        <ul>
+            <li><a href="tttttt.html">Home</a></li>
+            <li><a href="QUIZE PAGE.html">QUIZE</a></li>
+            <li><a href="quizecontect.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <div class="content"> 
+                 
+                    <!-- Question 1 -->
+                    <div class="question">
+                      <h2>1. What is the capital of INDIA?</h2>
+                      <input type="radio" id="q1a" name="q1" value="wrong"> MUMBAI
+                      <input type="radio" id="q1b" name="q1" value="wrong"> KOLKATA
+                      <input type="radio" id="q1c" name="q1" value="correct"> DELHI<br>
+                    </div>
+              
+                    <!-- Question 2 -->
+                    <div class="question">
+                      <h2>2. Which country have all climate</h2>
+                      <input type="radio" id="q2a" name="q2" value="correct">INDIA
+                      <input type="radio" id="q2b" name="q2" value="wrong"> GREELAND
+                      <input type="radio" id="q2c" name="q2" value="wrong"> RUSSIA<br>
+                    </div>
+              
+                    <!-- Question 3 -->
+                    <div class="question">
+                      <h2>3.WHAT IS THE NATIONAL ANIMAL OF INDIA?</h2>
+                      <input type="radio" id="q3a" name="q3" value="correct"> Royal Bengal Tiger
+                      <input type="radio" id="q3b" name="q3" value="wrong"> LION
+                      <input type="radio" id="q3c" name="q3" value="wrong"> CHEETAH<br>
+                    </div>
+              
+                    <!-- Question 4 -->
+                    <div class="question">
+                      <h2>4. What is the largest ocean on Earth?</h2>
+                      <input type="radio" id="q4a" name="q4" value="correct">  lOTUS
+                      <input type="radio" id="q4b" name="q4" value="wrong"> ROSE
+                      <input type="radio" id="q4c" name="q4" value="wrong"> SUNFLOWER<br>
+                    </div>
+              
+                    <!-- Question 5 -->
+                    <div class="question">
+                      <h2>5. Zero was invented by which country </h2>
+                      <input type="radio" id="q5a" name="q5" value="wrong"> BRAZIL
+                      <input type="radio" id="q5b" name="q5" value="wrong"> CHINA
+                      <input type="radio" id="q5c" name="q5" value="correct"> INDIA<br>
+                    </div>
+              
+                    <button type="button" onclick="checkAnswers()">Submit</button>
+                 <h1> <marquee><div id="result"></div></marquee></h1>
+                </div>
+                <script src="quizerun.js"></script>
+            </body>
+            </html>
